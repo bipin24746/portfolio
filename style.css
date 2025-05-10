@@ -1,0 +1,78 @@
+body {
+  background-color: black
+}
+
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  font-size: 25px;
+
+  padding-right: 30px;
+  list-style-type: none;
+  color: white;
+}
+
+.bss {
+  font-size: 25px;
+  color: aqua;
+  padding-left: 10px;
+  font-style: italic;
+}
+
+.li-nav {
+  padding: 5px 30px 0 30px;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.li-nav:hover {
+  color: aqua;
+}
+
+
+/* HomePage */
+.home-container{
+  color: white;
+  margin-top: 8rem;
+  margin-left: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.home-greetings{
+ font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+
+}
+.name-home{
+  color: aqua;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.home-image{
+  height: 20rem;
+  width: 20rem;
+  margin-right: 5rem;
+  border-radius: 50%;
+}
+
+
+.social-media{
+  display: flex;
+}
+.fb-profile, .insta-profile, .linkedin-profile, .github-profile i{
+  font-size: 30px;
+  color: white;
+  padding-left: 20px;
+}
+
