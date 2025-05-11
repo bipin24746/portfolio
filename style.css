@@ -1,11 +1,13 @@
 body {
-  background-color: black
+  background-color: black;
+  color: white;
 }
 
 /* navbar */
 nav {
   display: flex;
   justify-content: space-between;
+  background-color: rgb(0, 153, 255);
 }
 
 .navbar {
@@ -76,3 +78,33 @@ nav {
   padding-left: 20px;
 }
 
+.fb-profile:hover, .insta-profile:hover, .linkedin-profile:hover, .github-profile:hover i{
+  color: aqua;
+}
+
+
+/*freelancer*/
+.aboutme-container{
+  display: flex;
+  justify-content: space-around;
+}
+.about-image{
+  height: 20rem;
+  width: 20rem;
+  margin-right: 5rem;
+  border-radius: 50%;
+}
+.about-me{
+  text-align: center;
+  font-size: 35px;
+  margin: 12rem 0 5rem 0;
+}
+.about-paragraph{
+  font-size: 20px;
+  text-align: center;
+}
+.about-freelancer{
+  color: aqua;
+  font-size: 40px;
+  font-weight: bold;
+}
