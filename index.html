@@ -9,16 +9,28 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=flutter"
+    />
   </head>
   <body>
     <!-- this is navbar -->
     <nav>
       <h1 class="bss">BSS</h1>
       <ul class="navbar">
-        <li class="li-nav">Home</li>
-        <li class="li-nav">About</li>
-        <li class="li-nav">Skills</li>
-        <li class="li-nav">Contact</li>
+        <li class="li-nav">
+          <a href="#">Home</a>
+        </li>
+        <li class="li-nav">
+          <a href="#about">About</a>
+        </li>
+        <li class="li-nav">
+          <a href="#skills">Skills</a>
+        </li>
+        <li class="li-nav">
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </nav>
 
@@ -58,8 +70,9 @@
       </div>
     </div>
     <!--homepage end-->
+
     <!--About-->
-    <div>
+    <div id="about">
       <h1 class="about-me">About Me</h1>
       <div class="aboutme-container">
         <img src="assets/bipin1.webp" alt="" class="about-image" />
@@ -70,6 +83,41 @@
           in Computer Application). <br />
           I am currently learning about Web Technology.
         </p>
+      </div>
+    </div>
+
+    <!--Skills Page-->
+    <div id="skills">
+      <h1 class="skills-title">Skills</h1>
+      <div class="skills-icons">
+        <div class="html-text">
+          <i class="fa-brands fa-html5"></i>
+          <span class="skills-text">HTML</span>
+        </div>
+        <div class="css-js">
+          <div class="css-skill">
+            <i class="fa-brands fa-css3-alt"></i>
+            <span class="skills-text">CSS</span>
+          </div>
+          <div class="js-skill">
+            <i class="fa-brands fa-js"></i>
+            <span class="skills-text">JS</span>
+          </div>
+        </div>
+        <div class="re-flu-git">
+          <div class="react-skill">
+            <i class="fa-brands fa-react"></i>
+            <span class="skills-text">React</span>
+          </div>
+          <div class="flutter-skill">
+            <span class="material-symbols-outlined"> flutter </span>
+            <span class="skills-text">Flutter</span>
+          </div>
+          <div class="github-skill">
+            <i class="fa-brands fa-github"></i>
+            <span class="skills-text">Github</span>
+          </div>
+        </div>
       </div>
     </div>
   </body>

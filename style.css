@@ -1,3 +1,5 @@
+
+
 body {
   background-color: black;
   color: white;
@@ -8,7 +10,14 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: rgb(0, 153, 255);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-radius: 10px;
+  margin-top: 10px;
+
 }
+
 
 .navbar {
   display: flex;
@@ -37,74 +46,160 @@ nav {
   color: aqua;
 }
 
+a{
+  color: white;
+  text-decoration: none;
+}
 
 /* HomePage */
-.home-container{
+.home-container {
   color: white;
-  margin-top: 8rem;
+  margin-top: 14rem;
   margin-left: 10rem;
   display: flex;
   justify-content: space-between;
 }
 
-
-.home-greetings{
- font-size: 50px;
+.home-greetings {
+  font-size: 50px;
   font-weight: bold;
   font-style: italic;
-
 }
-.name-home{
+.name-home {
   color: aqua;
   font-size: 45px;
   font-style: italic;
   font-weight: bold;
 }
 
-.home-image{
+.home-image {
   height: 20rem;
   width: 20rem;
   margin-right: 5rem;
   border-radius: 50%;
 }
 
-
-.social-media{
+.social-media {
   display: flex;
 }
-.fb-profile, .insta-profile, .linkedin-profile, .github-profile i{
+.fb-profile,
+.insta-profile,
+.linkedin-profile,
+.github-profile i {
   font-size: 30px;
   color: white;
   padding-left: 20px;
 }
 
-.fb-profile:hover, .insta-profile:hover, .linkedin-profile:hover, .github-profile:hover i{
+.fb-profile:hover,
+.insta-profile:hover,
+.linkedin-profile:hover,
+.github-profile:hover i {
   color: aqua;
 }
 
-
 /*freelancer*/
-.aboutme-container{
+
+.aboutme-container {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 10rem;
 }
-.about-image{
+.about-image {
   height: 20rem;
   width: 20rem;
   margin-right: 5rem;
   border-radius: 50%;
 }
-.about-me{
+.about-me {
   text-align: center;
   font-size: 35px;
   margin: 12rem 0 5rem 0;
+  padding-top: 8rem;
 }
-.about-paragraph{
+.about-paragraph {
   font-size: 20px;
   text-align: center;
 }
-.about-freelancer{
+.about-freelancer {
   color: aqua;
   font-size: 40px;
   font-weight: bold;
+}
+
+
+/*skills page*/
+
+.skills-title{
+  text-align: center;
+  color: aqua;
+  font-size: 50px;
+  padding-top: 8rem;
+}
+.css-js{
+  display: flex;
+justify-content: center;
+  text-align: center;
+  margin-top: 15px;
+}
+.skills-icons{
+  font-size: 35px;
+  margin-bottom: 8rem;
+}
+
+.html-text,.skills-text{
+  display: grid;
+
+  justify-content: center;
+  text-align: center;
+}
+
+.css-skill{
+  margin-right: 25px;
+}
+.js-skill{
+  margin-left: 25px;
+}
+
+.re-flu-git{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 15px;
+}
+.react-skill{
+  margin-right: 15px;
+  margin-left: 25px;
+}
+
+.github-skill{
+  margin-left: 15px;
+}
+/* Shiny text style */
+.html-text,
+.skills-text,
+.css-js,
+.re-flu-git,
+.js-text,
+.react-text,
+.flutter-text,
+.github-text {
+
+  font-weight: bold;
+  background: linear-gradient(120deg, #00ffff, #ffffff, #00ffff);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
 }
